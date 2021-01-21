@@ -18,9 +18,9 @@
       src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
     <!-- Configura la app usando la información del sitio de Firebase. -->
     <script src="js/init.js"></script>
-    <script type="module" src="cmp/mi-nav.js"></script>
-    <script type="module" src="cmp/mi-footer.js"></script>
-    <script type="module" src="cmp/mi-progreso.js"></script>
+    <script type="module" src="inhtml/mi-nav.js"></script>
+    <script type="module" src="inhtml/mi-footer.js"></script>
+    <script type="module" src="inhtml/mi-progreso.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
@@ -29,7 +29,7 @@
       <h1>Mi Perfil</h1>
       <button id=terminarSesión type="button">Cerrar Sesión</button>
     </header>
-    <figure><img id=avatar src="" alt=Avatar></figure>
+    <figure><img id=avatar alt=Avatar></figure>
     <p>
       <label>
         Email
@@ -48,10 +48,10 @@
     </p>
     <mi-footer></mi-footer>
     <script type="module">
-      import { Fábrica } from "./js/Fabrica.js";
+      import { General } from "./js/Fabrica.js";
       import { muestraError } from "./lib/util.js";
 
-      const ctrlSesión = Fábrica.instancia.ctrlSesión;
+      const ctrlSesión = General.instancia.ctrlSesión;
       terminarSesión.addEventListener("click",
         () => ctrlSesión.terminaSesión());
 

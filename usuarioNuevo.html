@@ -13,9 +13,9 @@
     <script
       src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
     <script src="js/init.js"></script>
-    <script type="module" src="cmp/mi-nav.js"></script>
-    <script type="module" src="cmp/mi-footer.js"></script>
-    <script type="module" src="cmp/mi-progreso.js"></script>
+    <script type="module" src="inhtml/mi-nav.js"></script>
+    <script type="module" src="inhtml/mi-footer.js"></script>
+    <script type="module" src="inhtml/mi-progreso.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
@@ -55,15 +55,15 @@
     <mi-footer></mi-footer>
     <script type="module">
       import { muestraError } from "./lib/util.js";
-      import { Fábrica } from "./js/Fabrica.js";
+      import { General } from "./js/General.js";
       import { InfoPasatiempo } from "./js/InfoPasatiempo.js";
       import { InfoPrivilegio } from "./js/InfoPrivilegio.js";
       import { InfoUsuario } from "./js/InfoUsuario.js";
       import { muestraSesión, muestraUsuarios } from "./js/navegacion.js";
 
-      const ctrlSesión = Fábrica.instancia.ctrlSesión;
-      const ctrlUsuarios = Fábrica.instancia.ctrlUsuarios;
-      const foráneas = Fábrica.instancia.foráneasDeUsuarios;
+      const ctrlSesión = General.instancia.ctrlSesión;
+      const ctrlUsuarios = General.instancia.ctrlUsuarios;
+      const foráneas = General.instancia.foráneasDeUsuarios;
 
       protege();
       async function protege() {
