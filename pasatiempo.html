@@ -13,8 +13,8 @@
     <script
       src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
     <script src="js/init.js"></script>
-    <script type="module" src="inhtml/mi-nav.js"></script>
-    <script type="module" src="inhtml/mi-footer.js"></script>
+    <script type="module" src="cmp/mi-nav.js"></script>
+    <script type="module" src="cmp/mi-footer.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
@@ -35,13 +35,13 @@
     </form>
     <mi-footer></mi-footer>
     <script type="module">
-      import { General } from "./js/General.js";
+      import { Fábrica } from "./js/Fabrica.js";
       import { muestraError } from "./lib/util.js";
       import { InfoPasatiempo } from "./js/InfoPasatiempo.js";
       import { muestraPasatiempos, muestraSesión } from "./js/navegacion.js";
 
-      const ctrlSesión = General.instancia.ctrlSesión;
-      const ctrlPasatiempos = General.instancia.ctrlPasatiempos;
+      const ctrlSesión = Fábrica.instancia.ctrlSesión;
+      const ctrlPasatiempos = Fábrica.instancia.ctrlPasatiempos;
 
       const params = new URL(location.href).searchParams;
       const id = params.get("id");
@@ -99,3 +99,4 @@
     </script>
   </body>
 </html>
+

@@ -8,7 +8,7 @@ import { DaoUsuarios } from "./DaoUsuarios.js";
 import { ForáneasDeUsuarios } from "./ForaneasDeUsuarios.js";
 
 /** Usa el patrón Singleton. */
-export class General {
+export class Fábrica {
   constructor() {
     // @ts-ignore
     const firestore = firebase.firestore();
@@ -36,4 +36,4 @@ export class General {
     this.foráneasDeUsuarios = new ForáneasDeUsuarios();
   }
 }
-General.instancia = Object.freeze(new General());
+Fábrica.instancia = Object.freeze(new Fábrica());
