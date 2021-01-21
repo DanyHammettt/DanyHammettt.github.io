@@ -2,7 +2,7 @@ class MiNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
       `<ul>
-        <li><a href="index.html">Mi Perfil</a></li>
+        <li><a href="index.html">Sesión</a></li>
       </ul>`;
     this.ul = this.querySelector("ul");
   }
@@ -12,7 +12,7 @@ class MiNav extends HTMLElement {
   protege(privilegios) {
     let html = "";
     if (privilegios.has("Pasatiempos")) {
-      html += /* html */ `<li><a href="pasatiempos.html">Almacen</a></li>`;
+      html += /* html */ `<li><a href="pasatiempos.html">Pasatiempos</a></li>`;
     }
     if (privilegios.has("Usuarios")) {
       html += /* html */ `<li><a href="usuarios.html">Usuarios</a></li>`;
