@@ -12,7 +12,7 @@ class MiNav extends HTMLElement {
   protege(privilegios) {
     let html = "";
     if (privilegios.has("Pasatiempos")) {
-      html += /* html */ `<li><a href="pasatiempos.html">Almacen</a></li>`;
+      html += /* html */ `<button type="button" class="btn btn-dark"><a href="pasatiempos.html">Almacen</a></button`;
     }
     if (privilegios.has("Usuarios")) {
       html += /* html */ `<li><a href="usuarios.html">Usuarios</a></li>`;
