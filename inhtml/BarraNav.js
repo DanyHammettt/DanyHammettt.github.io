@@ -20,4 +20,4 @@ class Barra extends HTMLElement{
    	this.ul.innerHTML += html;
     }
    }
-   customElements.define("nav",Barra);
+   customElements.define("barra-nav",Barra);

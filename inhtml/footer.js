@@ -4,4 +4,4 @@ class Footer extends HTMLElement{
 			'Original de &copy; 2021 Daniel Franco Tinajero';
 	}
 }
-customElements.define("pie",Footer);
+customElements.define("pie-footer",Footer);
