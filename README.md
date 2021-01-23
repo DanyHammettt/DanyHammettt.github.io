@@ -1,4 +1,2 @@
-# rmrbdx.github.io.
-Ejemplo de bases de datos con Firebase.
+# DanyHammettt,github.io.
 
-https://rmrbdx.github.io
