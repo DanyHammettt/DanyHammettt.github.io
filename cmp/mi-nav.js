@@ -1,7 +1,9 @@
 class MiNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
-      `<button type="button" class="btn btn-dark"><a href="index.html">Mi Perfil</a></button`;
+      `<ul>
+        <li><a href="index.html">Mi Perfil</a></li>
+      </ul>`;
     this.ul = this.querySelector("ul");
   }
   /**
@@ -10,10 +12,10 @@ class MiNav extends HTMLElement {
   protege(privilegios) {
     let html = "";
     if (privilegios.has("Pasatiempos")) {
-      html += /* html */ `<button type="button" class="btn btn-dark"><a href="pasatiempos.html">Almacen</a></button`;
+      html += /* html */ `<li><a href="pasatiempos.html">Almacen</a></li>`;
     }
     if (privilegios.has("Usuarios")) {
-      html += /* html */ `<button type="button" class="btn btn-dark"><a href="usuarios.html">Usuarios</a></button`;
+      html += /* html */ `<li><a href="usuarios.html">Usuarios</a></li>`;
     }
     this.ul.innerHTML += html;
   }
