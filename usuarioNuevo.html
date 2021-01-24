@@ -16,27 +16,30 @@
     <script type="module" src="cmp/mi-nav.js"></script>
     <script type="module" src="cmp/mi-footer.js"></script>
     <script type="module" src="cmp/mi-progreso.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
     <form id="forma">
       <mi-nav id="miNav"></mi-nav>
       <header>
+        <button type="button" class="btn btn-outline-danger">
         <a href="usuarios.html">Cancelar</a>
+      </button>
         <h1>Usuario Nuevo</h1>
-        <button type="submit">Guardar</button>
+        <button type="submit" class="btn btn-success">Guardar</button>
       </header>
-      <p><label>Cue <input name="cue" type="email"></label></p>
+      <p><label>Correo Electronico <input name="cue" type="email" placeholder="Ingrese correo Electronico"></label></p>
       <p>
         <label>
-          Avatar
+          Imagen de Perfil
           <input name="avatar" type="file" accept=".png,.jpg,.jpeg,.gif">
         </label>
       </p>
       <!-- Maneja una asociación a uno. -->
       <p>
         <label>
-          Pasatiempo
+          Almacen
           <select name="pasatiempo">
             <option>Cargando…</option>
           </select>
@@ -44,7 +47,7 @@
       </p>
       <!-- Maneja una asociación a muchos. -->
       <fieldset>
-        <legend>Privilegios</legend>
+        <legend>Accede a:</legend>
         <ul id="privilegios" class="checks">
           <li>
             <mi-progreso></mi-progreso>

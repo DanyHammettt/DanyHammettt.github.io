@@ -15,21 +15,24 @@
     <script src="js/init.js"></script>
     <script type="module" src="cmp/mi-nav.js"></script>
     <script type="module" src="cmp/mi-footer.js"></script>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
     <form id="forma">
       <mi-nav id="miNav"></mi-nav>
       <header>
-        <a href="pasatiempos.html">Cancelar</a>
-        <h1>Pasatiempo</h1>
-        <button type="submit">Guardar</button>
-        <button id="eliminar" type="button">Eliminar</button>
+        <button type="button" class="btn btn-outline-danger">
+        <a href="pasatiempos.html">Cancelar Edicion</a>
+      </button>
+        <h1>Productos</h1>
+        <button type="submit" class="btn btn-success">Guardar Producto</button>
+        <button id="eliminar" type="button" class="btn btn-danger">Eliminar Producto</button>
       </header>
       <p>
         <label>
-          Nombre
-          <input name="nombre" type="text" value="Cargando…">
+          Nombre del Articulo.
+          <input name="nombre" type="text" value="Espere...">
         </label>
       </p>
     </form>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasatiempo Nuevo</title>
+    <title>Agregar Producto</title>
     <script
       src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
     <script
@@ -15,17 +15,20 @@
     <script src="js/init.js"></script>
     <script type="module" src="cmp/mi-nav.js"></script>
     <script type="module" src="cmp/mi-footer.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
     <form id="forma">
       <mi-nav id="miNav"></mi-nav>
       <header>
-        <a href="pasatiempos.html">Cancelar</a>
-        <h1>Pasatiempo Nuevo</h1>
-        <button type="submit">Guardar</button>
+        <button type="button" class="btn btn-outline-danger">
+        <a href="pasatiempos.html">Cancelar Accion</a>
+        </button>
+        <h1>Nuevo Producto</h1>
+        <button type="submit" class="btn btn-success" >Guardar</button>
       </header>
-      <p><label>Nombre <input name="nombre" type="text"></label></p>
+      <p><label>Nombre del Producto<input name="nombre" type="text"></label></p>
     </form>
     <mi-footer></mi-footer>
     <script type="module">
