@@ -6,7 +6,7 @@ import { InfoPasatiempo } from "./InfoPasatiempo.js";
 export class DaoPasatiempos {
   /** @param {{collection: (col: string) => any; }} firestore */
   constructor(firestore) {
-    this._colección = firestore.collection("PASATIEMPO");
+    this._colección = firestore.collection("ALMACEN");
   }
   /** Crea un pasatiempo a partir de un documento.
  * @return {InfoPasatiempo} */
